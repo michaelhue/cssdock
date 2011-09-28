@@ -1,0 +1,65 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: normal 14px/1.5 "PT Sans", Helvetica, Arial, sans-serif;
+	background: rgb(30, 30, 30);
+	color: rgb(220, 220, 220);
+}
+
+.wrapper {
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	width: 660px;
+	height: 340px;
+	margin: -190px 0 0 -330px;
+}
+
+.example {
+	position: relative;
+	width: 660px;
+	height: 340px;
+	overflow: hidden;		
+	background: rgb(15, 15, 15) url(../images/bg.jpg) no-repeat center bottom;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0 1px 10px rgb(10, 10, 10);
+	-webkit-box-shadow: 0 1px 10px rgb(10, 10, 10);
+	box-shadow: 0 1px 10px rgb(10, 10, 10);
+}
+
+h1 {
+	margin-top: 1.5em;
+	color: rgba(255, 255, 255, .9);
+	line-height: 1;
+	font-size: 70px;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 0px 1px 5px rgb(255, 160, 55), 0px 1px 15px rgb(255, 160, 55);
+	cursor: default;
+}
+
+h1 em {
+	display: inline-block;
+	font-size: .29em;
+	font-style: normal;
+	vertical-align: top;
+	margin-left: -.4em;
+	padding-top: .46em;
+}
+
+footer {
+	position: absolute;
+	bottom: -3em;
+	left: 0;
+	right: 0;
+	font-size: 12px;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+	color: rgb(160, 160, 160);
+}
+
+footer a {
+	color: inherit;
+}
