@@ -9,8 +9,9 @@ License: 	MIT License (see LICENSE file)
 ----------------------------------------------- */
 
 /* @group Animation */
-/* Defines the bounce animation. Note that only the up motion is defined as the down motion 
-is created automatically using `animation-direction: alternate;`. */
+/* Defines the bounce animation. Note that only the up motion is defined as
+   the down motion is created automatically using
+   `animation-direction: alternate;`. */
 @-webkit-keyframes bounce {
 	  0% { -webkit-transform: translateY(0); }
 	100% { -webkit-transform: translateY(-20px); }
@@ -41,7 +42,7 @@ is created automatically using `animation-direction: alternate;`. */
 }
 
 /* Creates the left and right end caps of the dock. You may not need these
-when creating your own dock. */
+   when creating your own dock. */
 .dock ul:before, .dock ul:after {
 	content: " ";
 	position: absolute;
@@ -62,9 +63,9 @@ when creating your own dock. */
 /* @end */
 
 /* @group Items */
-/* Defines a dock item. Note the `-webkit-box-reflect` property which creates a nice
-reflection below the item. The gradient is a mask in order to exlcude the status
-indicator from the reflection. */
+/* Defines a dock item. Note the `-webkit-box-reflect` property which creates
+   a nice reflection below the item. The gradient is a mask in order to
+   exlcude the status indicator from the reflection. */
 .dock li {
 	display: inline-block;
 	position: relative;
@@ -91,9 +92,9 @@ indicator from the reflection. */
 	-moz-animation: bounce .3s 6 alternate ease-out;
 }
 
-/* Generates the status indicator. Looks complex but most of this stuff is just 
-repetition with different vendor prefixes. Isn't it fun to write everything 
-three times? *sigh* */
+/* Generates the status indicator. Looks complex but most of this stuff is
+   just repetition with different vendor prefixes. Isn't it fun to write
+   everything three times? *sigh* */
 .dock li:after {
 	content: " ";
 	position: absolute;
@@ -109,15 +110,15 @@ three times? *sigh* */
 	-webkit-border-radius: 5px;
 	-o-border-radius: 5px;
 	border-radius: 5px;
-	-webkit-box-shadow: 
+	-webkit-box-shadow:
 		inset 0 1px 3px rgba(75, 255, 255, .4),
 		0 0 4px rgba(75, 255, 255, .5),
 		0 -1px 7px rgb(75, 255, 255);
-	-moz-box-shadow: 
+	-moz-box-shadow:
 		inset 0 1px 3px rgba(75, 255, 255, .4),
 		0 0 4px rgba(75, 255, 255, .5),
 		0 -1px 7px rgb(75, 255, 255);
-	box-shadow: 
+	box-shadow:
 		inset 0 1px 3px rgba(75, 255, 255, .4),
 		0 0 4px rgba(75, 255, 255, .5),
 		0 -1px 7px rgb(75, 255, 255);
@@ -134,8 +135,9 @@ three times? *sigh* */
 /* @end */
 
 /* @group Label */
-/* This is just a wrapper in order to center the actual label horizontally. You
-may need to adjust the width negative margin if you have really long labels. */
+/* This is just a wrapper in order to center the actual label horizontally.
+   You may need to adjust the width negative margin if you have really long
+   labels. */
 .dock em {
 	position: absolute;
 	top: -34px;
@@ -184,8 +186,8 @@ may need to adjust the width negative margin if you have really long labels. */
 
 /* @group Icon */
 /* Sets the icons to a smaller width so they can be enlarged and applies
-transitions for a smooth animation. Make sure to adjust the width so it 
-matches your images. */
+   transitions for a smooth animation. Make sure to adjust the width so it
+   matches your images. */
 .dock img {
 	width: 86px;
 	height: auto;
@@ -194,7 +196,7 @@ matches your images. */
 	-moz-transition: width .2s, height .2s;
 	-o-transition: width .2s, height .2s;
 }
- 
+
 .dock li:hover img, .dock li a:focus img {
 	width: 96px;
 }
