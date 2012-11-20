@@ -177,7 +177,7 @@ may need to adjust the width negative margin if you have really long labels. */
 	border-radius: 12px;
 }
 
-.dock li:hover em {
+.dock li:hover em, .dock li a:focus em {
 	display: block;
 }
 /* @end */
@@ -195,7 +195,7 @@ matches your images. */
 	-o-transition: width .2s, height .2s;
 }
  
-.dock li:hover img {
+.dock li:hover img, .dock li a:focus img {
 	width: 96px;
 }
 
